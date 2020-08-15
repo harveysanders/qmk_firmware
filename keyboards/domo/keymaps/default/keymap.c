@@ -16,9 +16,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      *    (Press: Mute)
      */
     [0] = LAYOUT(
-        KC_MUTE, KC_HOME, KC_END, KC_PGUP,
+        KC_HOME, KC_END, KC_PGUP,
         TG(1), KC_UP, KC_PGDOWN,
-        KC_LEFT, KC_DOWN, KC_RGHT
+        KC_MUTE, KC_LEFT, KC_DOWN, KC_RGHT
     ),
 
     /* Keymap 1: Function Layer
@@ -35,9 +35,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      *  | Transparent | Undo          | Redo            | Paste           |
      */
     [1] = LAYOUT(
-        KC_TRNS, KC_WBAK, KC_WFWD, KC_WREF,
+        KC_WBAK, KC_WFWD, KC_WREF,
         TG(0), KC_CUT, KC_COPY,
-        KC_UNDO, KC_AGAIN, KC_PASTE
+        KC_TRNS, KC_UNDO, KC_AGAIN, KC_PASTE
     ),
 };
 
