@@ -39,6 +39,7 @@
 /* Rotary encoder */
 #define ENCODERS_PAD_A { F5 }
 #define ENCODERS_PAD_B { F6 }
+#define TAP_CODE_DELAY 10
 
 /* COL2ROW or ROW2COL */
 #define DIODE_DIRECTION COL2ROW
@@ -50,3 +51,4 @@
 
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 #define DEBOUNCE 5
+
