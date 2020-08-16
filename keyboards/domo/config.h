@@ -37,12 +37,12 @@
 #define UNUSED_PINS
 
 /* Rotary encoder */
-#define ENCODERS_PAD_A { F5 }
-#define ENCODERS_PAD_B { F6 }
+#define ENCODERS_PAD_A { F6 }
+#define ENCODERS_PAD_B { F5 }
 #define TAP_CODE_DELAY 10
 
 /* COL2ROW or ROW2COL */
-#define DIODE_DIRECTION COL2ROW
+#define DIODE_DIRECTION ROW2COL
 
 /* Underlight configuration */
 #define RGB_DI_PIN D3 
