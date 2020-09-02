@@ -27,6 +27,13 @@ void encoder_update_user(uint8_t index, bool clockwise) {
     }
 }
 
+#ifdef OLED_DRIVER_ENABLE
+void oled_task_user(void) {
+    oled_write_P(PSTR("Hello World!\n"), false);  // Renders a static text
+    oled_scroll_left();  // Turns on scrolling
+}
+#endif
+
 // debugging
 // void keyboard_post_init_user(void) {
 //     // Customise these values to desired behaviour
