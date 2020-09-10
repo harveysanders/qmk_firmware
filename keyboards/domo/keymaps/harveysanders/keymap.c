@@ -1,19 +1,35 @@
 #include QMK_KEYBOARD_H
 // #include <print.h>
 
+// Debugger Remote
+// Chrome
+// Play/Pause F8            KC_F8
+// Step over F10            KC_F10
+// Step In F11              KC_F11
+// Step Out Shift + F11     KC_LSHIFT + KC_F11
+// Deactivate Cmd + F8      KC_LGUI + KC_F8
+
+// VS Code
+// Play/Pause F5            KC_F5
+// Step over F10            KC_F10
+// Step In F11              KC_F11
+// Step Out Shift + F11      KC_LSHIFT + KC_F11
+// Deactivate none          
+// Restart Shift+Cmd+F5     KC_LSHIFT + KC_LGUI + KC_F5
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     // Keymap 0: (Base Layer) Default Layer
     [0] = LAYOUT(
-                        KC_HOME, KC_END, KC_DEL,
-                        MO(1), KC_UP, KC_ENTER,
-        KC_AUDIO_MUTE,  KC_LEFT, KC_DOWN, KC_RGHT
+        KC_HOME,        KC_END,         KC_DEL,
+        MO(1),          KC_UP,          KC_ENTER,
+        KC_AUDIO_MUTE,  KC_LEFT,        KC_DOWN,        KC_RGHT
     ),
 
     // Keymap 1: (Function Layer) RGB control Layer
     [1] = LAYOUT(
-                        RGB_TOG, RGB_MODE_FORWARD, RGB_MODE_REVERSE,
-                        KC_TRANSPARENT, KC_NO, KC_NO,
-        KC_TRANSPARENT, KC_NO, KC_NO, KC_NO
+        RGB_TOG,        RGB_MODE_FORWARD,   RGB_MODE_REVERSE,
+        KC_TRANSPARENT, KC_NO,              KC_NO,
+        KC_TRANSPARENT, KC_NO,              KC_NO,      KC_NO
     ),
 };
 
